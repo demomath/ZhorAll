@@ -6,7 +6,7 @@ import com.abc.middlecommon.mvvmbase.BaseMvvmActivity;
 import com.abc.zhor.model.ZhorAppModel;
 import com.abc.zhor.vm.ZhorAppVM;
 import com.abc.zhor.R;
-import com.abc.zhorapp.databinding.ZhorActivityAppBinding;
+import com.abc.zhor.databinding.ZhorActivityAppBinding;
 
 
 /**

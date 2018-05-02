@@ -6,7 +6,7 @@ import com.abc.middlecommon.mvvmbase.BaseMvvmVM;
 import com.abc.middlerouter.Router;
 import com.abc.zhor.model.ZhorAppModel;
 import com.abc.zhor.view.ZhorAppActivity;
-import com.abc.zhorapp.databinding.ZhorActivityAppBinding;
+import com.abc.zhor.databinding.ZhorActivityAppBinding;
 
 /**
  * Created by wudi on 2018/4/28.
