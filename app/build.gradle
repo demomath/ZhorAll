@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.abc.app"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        packagingOptions {
+            exclude 'android/databinding/DataBindingComponent.java'
+            exclude 'android/databinding/DynamicUtil.java'
+            exclude 'META-INF/rxjava.properties'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled java.lang.Boolean.parseBoolean(gradle.minifyEnabled)
+            shrinkResources java.lang.Boolean.parseBoolean(gradle.shrinkResources)
+            zipAlignEnabled java.lang.Boolean.parseBoolean(gradle.zipAlignEnabled)
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),'proguard-rules.pro'
+
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources java.lang.Boolean.parseBoolean(gradle.shrinkResources)
+            zipAlignEnabled java.lang.Boolean.parseBoolean(gradle.zipAlignEnabled)
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+//    configurations.all {
+//        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.1'
+//        resolutionStrategy.cacheChangingModulesFor 10, 'seconds'
+//    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    /** OkHttp */
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    /** OkHttp 日志拦截= */
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    /** Retrofit */
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    /** 网络请求适配器 */
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    /** Gson 解析 */
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    compile project(':app.home')
+    compile project(':app.main')
+    compile project(path: ':middle.router')
+    compile project(path: ':lib.core')
+    compile project(path: ':lib.mvvm')
+}

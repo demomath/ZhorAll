@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abc.appmain">
+
+    <application>
+        <activity android:name="com.abc.appmain.ZhorMainActivity"
+            android:theme="@style/ZhorMainAppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="zhor"
+                    android:host="abc"
+                    android:path="/ZhorMainActivity"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

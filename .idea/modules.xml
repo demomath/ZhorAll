@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZhorAll.iml" filepath="$PROJECT_DIR$/ZhorAll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.home/app.home.iml" filepath="$PROJECT_DIR$/app.home/app.home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.main/app.main.iml" filepath="$PROJECT_DIR$/app.main/app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib.core/lib.core.iml" filepath="$PROJECT_DIR$/lib.core/lib.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib.mvvm/lib.mvvm.iml" filepath="$PROJECT_DIR$/lib.mvvm/lib.mvvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/middle.common/middle.common.iml" filepath="$PROJECT_DIR$/middle.common/middle.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/middle.router/middle.router.iml" filepath="$PROJECT_DIR$/middle.router/middle.router.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="ZhorAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/zhor_c_3F51B5</item>
+        <item name="colorPrimaryDark">@color/zhor_c_303F9F</item>
+        <item name="colorAccent">@color/zhor_c_FF4081</item>
+    </style>
+</resources>

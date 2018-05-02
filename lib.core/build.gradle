@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    //design包
+    //noinspection GradleCompatible
+    provided 'com.android.support:design:27.1.1'
+    //cardView包
+    //noinspection GradleCompatible
+    provided 'com.android.support:cardview-v7:27.1.1'
+    //recyclerview包
+    //noinspection GradleCompatible
+    provided 'com.android.support:recyclerview-v7:27.1.1'
+
+    provided 'com.android.support:support-annotations:28.0.0-alpha1'
+
+    provided 'com.android.support.constraint:constraint-layout:1.1.0'
+    //流式布局
+    provided 'com.google.android:flexbox:0.3.0'
+    //动画向下版本兼容 nineold包
+    provided 'com.nineoldandroids:library:2.4.0'
+    //沉浸式
+    provided 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //okgo 网络请求框架包
+    provided 'com.lzy.net:okgo:3.0.4'
+    //gson json工具类 google解析Json的库
+    provided 'com.google.code.gson:gson:2.8.1'
+    //Log日志格式美化包
+    provided 'com.orhanobut:logger:2.2.0'
+    //微信登录，支付，分享包
+    provided 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.4.0'
+    //支付宝 支付包
+    provided files('libs/alipaySdk-20170309.jar')
+    //压缩与加密
+    provided files('libs/zip4j_1.3.2.jar')
+    //Zxing核心包
+    provided files('libs/zxing_core_3.0.1.jar')
+}
