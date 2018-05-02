@@ -6,6 +6,7 @@ import android.net.Uri;
 
 
 import com.abc.libcore.rxtools.RxLogTool;
+import com.abc.libnet.RetrofitManager;
 import com.abc.middlerouter.RouterManager;
 
 import java.util.List;
@@ -21,10 +22,11 @@ public class ZhorApplication extends Application {
 
         //初始化路由哈希集合
         List<Uri> activityUriList = RouterManager.getInstance().init(this);
-        for (Uri uri : activityUriList) {
-            RxLogTool.e(uri.toString());
-        }
 
+        //初始化打印log的环境
+        RxLogTool.init(this);
 
+        //初始化网络库
+        RetrofitManager.init(this,"baseurl").build();
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.abc.thor_home">
+    package="com.abc.apphome">
     <application
         android:allowBackup="true"
         android:icon="@mipmap/zhor_home_icon_launcher"

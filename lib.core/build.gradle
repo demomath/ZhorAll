@@ -30,10 +30,8 @@ dependencies {
     //noinspection GradleCompatible
     provided 'com.android.support:design:27.1.1'
     //cardView包
-    //noinspection GradleCompatible
     provided 'com.android.support:cardview-v7:27.1.1'
     //recyclerview包
-    //noinspection GradleCompatible
     provided 'com.android.support:recyclerview-v7:27.1.1'
 
     provided 'com.android.support:support-annotations:28.0.0-alpha1'
@@ -59,4 +57,13 @@ dependencies {
     provided files('libs/zip4j_1.3.2.jar')
     //Zxing核心包
     provided files('libs/zxing_core_3.0.1.jar')
+
+
+    // Android组件库，里面定义了例如RxAppCompatActivity、RxFragment之类的Android组件
+    // 内部引用了基础库和Android库，如果使用此库则无需再重复引用
+    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+
+    // Android使用的库，继承LifecycleActivity使用
+    // 需要引入Google的仓库支持，用法和rxlifecycle-navi类似
+    compile 'com.trello.rxlifecycle2:rxlifecycle-android-lifecycle:2.1.0'
 }

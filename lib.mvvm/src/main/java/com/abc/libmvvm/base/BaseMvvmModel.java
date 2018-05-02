@@ -1,4 +1,4 @@
-package com.abc.middlecommon.mvvmbase;
+package com.abc.libmvvm.base;
 
 /**
  * Created by wudi on 2018/4/28.

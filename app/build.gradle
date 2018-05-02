@@ -67,9 +67,14 @@ dependencies {
     /** Gson 解析 */
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
 
-    compile project(':app.home')
-    compile project(':app.main')
+    if (!mainIsModule.toBoolean()) {
+        compile project(':app.main')
+    }
+    if (!homeIsModule.toBoolean()) {
+        compile project(':app.home')
+    }
     compile project(path: ':middle.router')
     compile project(path: ':lib.core')
     compile project(path: ':lib.mvvm')
+    compile project(path: ':lib.net')
 }

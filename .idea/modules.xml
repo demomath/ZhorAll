@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/app.main/app.main.iml" filepath="$PROJECT_DIR$/app.main/app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib.core/lib.core.iml" filepath="$PROJECT_DIR$/lib.core/lib.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib.mvvm/lib.mvvm.iml" filepath="$PROJECT_DIR$/lib.mvvm/lib.mvvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib.net/lib.net.iml" filepath="$PROJECT_DIR$/lib.net/lib.net.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle.common/middle.common.iml" filepath="$PROJECT_DIR$/middle.common/middle.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle.router/middle.router.iml" filepath="$PROJECT_DIR$/middle.router/middle.router.iml" />
     </modules>

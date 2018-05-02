@@ -6,7 +6,7 @@ import android.widget.Toast;
 
 import com.abc.libcore.rxtools.view.RxToast;
 import com.abc.middlerouter.annotation.RouterAction;
-import com.abc.thor_home.R;
+import com.abc.apphome.R;
 
 
 @RouterAction(path = "/ZhorHomeActivity")

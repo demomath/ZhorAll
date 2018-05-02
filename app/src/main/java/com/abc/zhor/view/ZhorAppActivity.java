@@ -2,7 +2,7 @@ package com.abc.zhor.view;
 
 import android.databinding.DataBindingUtil;
 
-import com.abc.middlecommon.mvvmbase.BaseMvvmActivity;
+import com.abc.libmvvm.base.BaseMvvmActivity;
 import com.abc.zhor.model.ZhorAppModel;
 import com.abc.zhor.vm.ZhorAppVM;
 import com.abc.zhor.R;
@@ -23,23 +23,27 @@ public class ZhorAppActivity extends BaseMvvmActivity<ZhorAppVM,ZhorActivityAppB
     }
 
     @Override
-    public void setModelToBinding() {
-        mModel = new ZhorAppModel ("跳转到main", "跳转到home");
-        mBinding.setZhormodel(mModel);
+    public void bindingDefModel() {
+
     }
 
     @Override
     public ZhorAppVM createVM() {
-        return new ZhorAppVM(this,mModel,mBinding);
+        return new ZhorAppVM(this,mBinding);
     }
 
     @Override
-    protected void setVMToBinding() {
+    protected void bindingVM() {
         mBinding.setZhorvm(mViewModel);
     }
 
     @Override
     protected void initView() {
 
+    }
+
+    @Override
+    protected void initData() {
+        mViewModel.requestData();
     }
 }

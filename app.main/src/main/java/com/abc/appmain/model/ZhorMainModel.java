@@ -1,13 +1,12 @@
 package com.abc.appmain.model;
 
 
-import com.abc.middlecommon.mvvmbase.BaseMvvmModel;
 
 /**
  * Created by wudi on 2018/4/27.
  */
 
-public class ZhorMainModel extends BaseMvvmModel<ZhorMainModel> {
+public class ZhorMainModel {
     private String name; //姓名
     private int age; //年龄
 

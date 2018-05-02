@@ -1,13 +1,12 @@
 package com.abc.zhor.model;
 
 
-import com.abc.middlecommon.mvvmbase.BaseMvvmModel;
 
 /**
  * Created by wudi on 2018/4/28.
  */
 
-public class ZhorAppModel extends BaseMvvmModel<ZhorAppModel> {
+public class ZhorAppModel {
 
     private String main;
     private String home;

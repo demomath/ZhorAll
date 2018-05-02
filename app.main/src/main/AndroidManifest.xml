@@ -3,7 +3,7 @@
     package="com.abc.appmain">
 
     <application>
-        <activity android:name="com.abc.appmain.ZhorMainActivity"
+        <activity android:name="com.abc.appmain.view.ZhorMainActivity"
             android:theme="@style/ZhorMainAppTheme"
             android:screenOrientation="portrait">
             <intent-filter>

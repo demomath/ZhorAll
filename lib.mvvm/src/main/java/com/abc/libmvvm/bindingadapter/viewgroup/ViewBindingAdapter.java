@@ -7,7 +7,7 @@ import android.databinding.ViewDataBinding;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.abc.libmvvm.base.ViewModel;
+import com.abc.libmvvm.interf.ViewModel;
 
 import me.tatarka.bindingcollectionadapter.ItemView;
 
