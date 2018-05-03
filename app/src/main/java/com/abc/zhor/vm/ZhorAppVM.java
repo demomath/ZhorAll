@@ -7,6 +7,7 @@ import com.abc.libmvvm.command.ReplyCommand;
 import com.abc.libnet.RetrofitManager;
 import com.abc.middlerouter.Router;
 import com.abc.zhor.model.ZhorAppModel;
+import com.abc.zhor.net.ZhorAppModelManager;
 import com.abc.zhor.view.ZhorAppActivity;
 import com.abc.zhor.databinding.ZhorActivityAppBinding;
 
@@ -27,12 +28,12 @@ public class ZhorAppVM extends BaseMvvmVM<ZhorAppActivity,ZhorAppModel,ZhorActiv
     public void requestData() {
         onSuccess(null);
 
-
+        ZhorAppModelManager.getInstance().test(null,this);
 //        RetrofitManager.create();
     }
 
     @Override
-    public void onSuccess(BaseMvvmModel<ZhorAppModel> zhorAppModelBaseMvvmModel) {
+    public void onSuccess(ZhorAppModel zhorAppModel) {
         mModel = new ZhorAppModel("111","222");
         mBinding.setZhormodel(mModel);
     }

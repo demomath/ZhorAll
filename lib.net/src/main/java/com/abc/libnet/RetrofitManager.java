@@ -16,13 +16,15 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import rx.Subscription;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 /**
  * Created by wudi on 17-5-2.
  *
  * retrofit 管理者
  */
-public class RetrofitManager<T> {
+public class RetrofitManager {
 
     private static volatile Retrofit mRetrofit;
     private static OkHttpClient mOkHttpClient;

@@ -5,6 +5,8 @@ import com.abc.zhor.model.ZhorAppModel;
 
 import okhttp3.RequestBody;
 import retrofit2.http.Body;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 import rx.Observable;
 
@@ -16,9 +18,10 @@ public interface ZhorAppApi {
 
     /**
      * 测试
-     * @param Body
+     * @param param
      * @return
      */
     @POST("/path")
-    Observable<BaseMvvmModel<ZhorAppModel>> test(@Body RequestBody Body);
+    @FormUrlEncoded
+    Observable<BaseMvvmModel<ZhorAppModel>> test(@Field("param") String param);
 }

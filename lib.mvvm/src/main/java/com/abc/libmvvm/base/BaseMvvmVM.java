@@ -10,7 +10,7 @@ import rx.Subscriber;
  * Created by wudi on 2018/4/28.
  */
 
-public abstract class BaseMvvmVM<V extends BaseMvvmActivity,T,B extends ViewDataBinding> extends BaseMvvmSubscriber<BaseMvvmModel<T>> implements ViewModel{
+public abstract class BaseMvvmVM<V extends BaseMvvmActivity,T,B extends ViewDataBinding> extends BaseMvvmSubscriber<T> implements ViewModel{
 
     public V mView;
     public T mModel;

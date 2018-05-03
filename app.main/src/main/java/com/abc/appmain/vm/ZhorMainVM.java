@@ -17,7 +17,7 @@ public class ZhorMainVM extends BaseMvvmVM<ZhorMainActivity,ZhorMainModel,ZhorMa
     }
 
     @Override
-    public void onSuccess(BaseMvvmModel<ZhorMainModel> zhorMainModelBaseMvvmModel) {
+    public void onSuccess(ZhorMainModel zhorMainModel) {
 
     }
 

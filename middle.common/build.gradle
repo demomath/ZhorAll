@@ -34,4 +34,5 @@ dependencies {
     implementation project(':lib.core')
     implementation project(':lib.mvvm')
     implementation project(':middle.router')
+    compile project(path: ':lib.net')
 }
