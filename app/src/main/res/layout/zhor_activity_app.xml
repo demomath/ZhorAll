@@ -4,11 +4,13 @@
     <data>
         <variable name="zhormodel" type="com.abc.zhor.model.ZhorAppModel" />
         <variable name="zhorvm" type="com.abc.zhor.vm.ZhorAppVM" />
+        <import type="com.abc.zhor.R"/>
     </data>
     <LinearLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".view.ZhorAppActivity">
         <Button
             android:id="@+id/app_btn_go_main"
@@ -23,5 +25,6 @@
             android:layout_height="wrap_content"
             bind:text="@{zhormodel.home}"
             bind:clickCommand="@{zhorvm.goHomeView}"/>
+
     </LinearLayout>
 </layout>
