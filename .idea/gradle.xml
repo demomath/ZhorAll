@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app.home" />
             <option value="$PROJECT_DIR$/app.main" />
             <option value="$PROJECT_DIR$/lib.core" />
+            <option value="$PROJECT_DIR$/lib.img" />
             <option value="$PROJECT_DIR$/lib.mvvm" />
             <option value="$PROJECT_DIR$/lib.net" />
             <option value="$PROJECT_DIR$/middle.common" />

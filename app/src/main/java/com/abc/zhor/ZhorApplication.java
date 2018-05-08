@@ -7,6 +7,7 @@ import android.net.Uri;
 
 import com.abc.libcore.rxtools.RxLogTool;
 import com.abc.libcore.rxtools.RxTool;
+import com.abc.libimg.loader.ImageLoader;
 import com.abc.libnet.RetrofitManager;
 import com.abc.middlerouter.RouterManager;
 
@@ -32,5 +33,8 @@ public class ZhorApplication extends Application {
 
         //初始化网络库
         RetrofitManager.init(this,"http://www.baidu.com/").build();
+
+        //初始化图片加载库
+        ImageLoader.init(this);
     }
 }

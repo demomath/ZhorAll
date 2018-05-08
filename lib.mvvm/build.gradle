@@ -35,12 +35,10 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:support-v4:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'me.tatarka.bindingcollectionadapter:bindingcollectionadapter:1.1.0'
     compile 'me.tatarka.bindingcollectionadapter:bindingcollectionadapter-recyclerview:1.1.0'
     compile 'com.facebook.fresco:fresco:0.9.0+'
-
-
     implementation project(':lib.core')
+    implementation project(':lib.img')
 }

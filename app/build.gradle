@@ -77,4 +77,5 @@ dependencies {
     compile project(path: ':lib.core')
     compile project(':lib.mvvm')
     compile project(path: ':lib.net')
+    compile project(path: ':lib.img')
 }

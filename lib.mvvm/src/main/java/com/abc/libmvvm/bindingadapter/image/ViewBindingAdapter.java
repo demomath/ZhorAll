@@ -7,7 +7,10 @@ import android.support.annotation.DrawableRes;
 import android.text.TextUtils;
 import android.widget.ImageView;
 
+import com.abc.libimg.config.ScaleMode;
+import com.abc.libimg.loader.ImageLoader;
 import com.abc.libmvvm.command.ReplyCommand;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.facebook.common.executors.UiThreadImmediateExecutorService;
 import com.facebook.common.references.CloseableReference;
 import com.facebook.datasource.DataSource;
@@ -41,6 +44,11 @@ public final class ViewBindingAdapter {
                                  final ReplyCommand<DataSource<CloseableReference<CloseableImage>>> onFailureCommand) {
         imageView.setImageResource(placeholderImageRes);
         if (!TextUtils.isEmpty(uri)) {
+//            ImageLoader.with()
+//                    .scale(ScaleMode.FIT_CENTER)
+//                    .diskCacheStrategy(DiskCacheStrategy.NONE)
+//                    .asSquare()
+//                    .into(imageView);
             ImagePipeline imagePipeline = Fresco.getImagePipeline();
             ImageRequestBuilder builder = ImageRequestBuilder.newBuilderWithSource(Uri.parse(uri));
             if (width > 0 && height > 0) {

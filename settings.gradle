@@ -1,2 +1,2 @@
 apply from:"./loadConfig.gradle" //加载配置
-include ':app', ':lib.core', ':lib.mvvm', ':middle.common', ':middle.router', ':app.home', ':app.main', ':lib.net'
+include ':app', ':lib.core', ':lib.mvvm', ':middle.common', ':middle.router', ':app.home', ':app.main', ':lib.net', ':lib.img'
