@@ -26,7 +26,7 @@ import java.util.List;
 import com.abc.libimg.R;
 
 /**
- * Created by doudou on 2017/5/3.
+ * Created by wudi on 2017/5/3.
  */
 
 public class MultiView extends ImageView {

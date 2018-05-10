@@ -1,7 +1,7 @@
 package com.abc.libimg.config;
 
 /**
- * Created by doudou on 2017/4/25.
+ * Created by wudi on 2017/4/25.
  */
 
 public interface PriorityMode {

@@ -14,7 +14,7 @@ import java.io.File;
 import com.abc.libimg.utils.ImageUtil;
 
 /**
- * Created by doudou on 2017/4/10.
+ * Created by wudi on 2017/4/10.
  */
 
 public class SingleConfig {

@@ -3,7 +3,7 @@ package com.abc.libimg.imagei;
 import android.graphics.Bitmap;
 
 /**
- * Created by doudou on 2017/5/2.
+ * Created by wudi on 2017/5/2.
  */
 
 public interface ImageDownLoadCallBack {

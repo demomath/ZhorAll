@@ -1,59 +1,51 @@
-package com.abc.libmvvm.base;
+package com.abc.middlecommon;
 
+import android.app.usage.UsageEvents;
 import android.databinding.ViewDataBinding;
-import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
-import com.abc.libcore.activity.BaseAppActivity;
 import com.abc.libcore.rxtools.RxKeyboardTool;
-import com.abc.libcore.rxtools.RxLogTool;
-
-import java.util.concurrent.TimeUnit;
-
-import io.reactivex.Observable;
+import com.abc.libmvvm.base.BaseMvvmActivity;
+import com.abc.libmvvm.base.BaseMvvmVM;
 
 /**
- * Created by wudi on 2018/4/28.
+ * Created by wudi on 2018/5/9.
  */
-public abstract class BaseMvvmActivity<VM extends BaseMvvmVM<? extends BaseMvvmActivity,?,? extends ViewDataBinding>,B extends ViewDataBinding>
-        extends BaseAppActivity {
 
-    public VM mViewModel;
-    public B mBinding;
+public class CommonActivity<VM extends BaseMvvmVM<? extends BaseMvvmActivity,?,? extends ViewDataBinding>,B extends ViewDataBinding> extends BaseMvvmActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mBinding = setLayoutToView();
-        bindingDefModel();
-        mViewModel = createVM();
-        if (mViewModel==null) {
-            RxLogTool.e("当前页面（"+getLocalClassName()+"）未绑定ViewModel！");
-        } else {
-            bindingVM();
-            Observable.interval(1, TimeUnit.SECONDS).compose(this.bindToLifecycle())
-                    .subscribe();
-        }
-        initView();
-
-        initData();
+    public ViewDataBinding setLayoutToView() {
+        return null;
     }
 
-    public abstract B setLayoutToView();
+    @Override
+    public void bindingDefModel() {
 
-    public abstract void bindingDefModel();
+    }
 
-    public abstract VM createVM();
+    @Override
+    public BaseMvvmVM<? extends BaseMvvmActivity, ?, ? extends ViewDataBinding> createVM() {
+        return null;
+    }
 
-    protected abstract void bindingVM();
+    @Override
+    protected void bindingVM() {
 
-    protected abstract void initView();
+    }
 
-    protected abstract void initData();
+    @Override
+    protected void initView() {
 
+    }
+
+    @Override
+    protected void initData() {
+
+    }
 
     /**
      * 点击空白处隐藏软键盘
@@ -86,4 +78,6 @@ public abstract class BaseMvvmActivity<VM extends BaseMvvmVM<? extends BaseMvvmA
         }
 
     }
+
+
 }

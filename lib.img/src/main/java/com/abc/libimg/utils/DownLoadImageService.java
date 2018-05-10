@@ -19,7 +19,7 @@ import com.abc.libimg.imagei.ImageDownLoadCallBack;
 
 /**
  * 图片下载
- * Created by doudou on 2017/5/2.
+ * Created by wudi on 2017/5/2.
  */
 
 

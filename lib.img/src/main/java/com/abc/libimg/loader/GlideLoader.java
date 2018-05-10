@@ -48,7 +48,7 @@ import jp.wasabeef.glide.transformations.gpu.VignetteFilterTransformation;
 
 
 /**
- * Created by doudou on 2017/4/10.
+ * Created by wudi on 2017/4/10.
  * 参考:
  * https://mrfu.me/2016/02/28/Glide_Sries_Roundup/
  */

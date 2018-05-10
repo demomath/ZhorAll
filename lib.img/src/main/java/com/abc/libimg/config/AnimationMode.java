@@ -1,7 +1,7 @@
 package com.abc.libimg.config;
 
 /**
- * Created by doudou on 2017/4/24.
+ * Created by wudi on 2017/4/24.
  */
 
 public interface AnimationMode {

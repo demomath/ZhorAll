@@ -10,7 +10,7 @@ import com.abc.libimg.config.SingleConfig;
 import com.abc.libimg.utils.DownLoadImageService;
 
 /**
- * Created by doudou on 2017/4/19.
+ * Created by wudi on 2017/4/19.
  */
 
 public class ImageLoader {

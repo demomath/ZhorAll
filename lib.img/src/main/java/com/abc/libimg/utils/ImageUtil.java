@@ -34,7 +34,7 @@ import static com.abc.libimg.config.Contants.ANDROID_RESOURCE;
 import static com.abc.libimg.config.Contants.FOREWARD_SLASH;
 
 /**
- * Created by doudou on 2017/4/10.
+ * Created by wudi on 2017/4/10.
  */
 
 public class ImageUtil {

@@ -12,7 +12,7 @@ import com.abc.libimg.loader.GlideLoader;
 import com.abc.libimg.loader.ILoader;
 
 /**
- * Created by doudou on 2017/4/10.
+ * Created by wudi on 2017/4/10.
  */
 
 public class GlobalConfig {
